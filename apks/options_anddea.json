@@ -176,7 +176,7 @@
   "patchName" : "Custom branding name for YouTube",
   "options" : [ {
     "key" : "appName",
-    "value" : "RVX"
+    "value" : "RVX YouTube"
   } ]
 }, {
   "patchName" : "Custom double tap length",
