@@ -1,1 +1,50 @@
-{}
+{
+    "ReVanced/GmsCore": {
+        "ResourceName": "[ReVanced/GmsCore](https://github.com/ReVanced/GmsCore/releases/tag/v0.3.1.4.240913)",
+        "Version": "v0.3.1.4.240913",
+        "Changelog": "# Download\r\n\r\n| Default | Huawei |\r\n| -------- | -------- |\r\n| [Download](https://github.com/ReVanced/GmsCore/releases/download/v0.3.1.4.240913/app.revanced.android.gms-240913008-signed.apk) |  [Download](https://github.com/ReVanced/GmsCore/releases/download/v0.3.1.4.240913/app.revanced.android.gms-240913008-hw-signed.apk) |\r\n",
+        "PublishedOn": "2024-04-05T02:37:11Z"
+    },
+    "REAndroid/APKEditor": {
+        "ResourceName": "[REAndroid/APKEditor](https://github.com/REAndroid/APKEditor/releases/tag/V1.4.3)",
+        "Version": "V1.4.3",
+        "Changelog": "## What's Changed\r\n * Add latest framework android-36 (Baklava)\r\n * Apply compression method of native library files based on attribute `android:extractNativeLibs` #77 #150 :https://github.com/REAndroid/APKEditor/commit/ea49069ddbaf14bddbd23836082c2794815b18d1\r\n * Auto-build `com.android.dynamic.apk.fused.modules` meta data value #186 :https://github.com/REAndroid/ARSCLib/commit/68f51ffb0806ea07aa6d07f307bcdcbcd7c46239\r\n * [Protect] Keep compatibility with latest android versions\r\n * Better error/throw messages\r\n * Detect console and disable same-line(verbose) logging\r\n * Fix: Detect bad dex file names (e.g classes0.dex) #173 \r\n * Better handling of styled strings\r\n * Proper encoding/decoding of xml comments & CDATA\r\n * [Advanced] Optional xml charset via system property `com.reandroid.xml.KeepCharsetEncoding`:https://github.com/REAndroid/ARSCLib/commit/3133bf3985eb3016a6e3f07afd8593a18e646ef3\r\n * Minor improvement on smali\r\n\r\n## Contributors\r\n* @Kirlif\r\n* @AbhiTheModder #173\r\n \r\n**Full Changelog**: https://github.com/REAndroid/APKEditor/compare/V1.4.2...V1.4.3",
+        "PublishedOn": "2025-05-04T15:09:36Z"
+    },
+    "inotia00/revanced-cli": {
+        "ResourceName": "[inotia00/revanced-cli](https://github.com/inotia00/revanced-cli/releases/tag/v5.0.1)",
+        "Version": "v5.0.1",
+        "Changelog": "- Based on ReVanced Cli [5.0.0](https://github.com/ReVanced/revanced-cli/tree/v5.0.0)\r\n- Added option command `options` (`options.json` file generator)\r\n- Added option command `patches` (`patches.json` file generator)\r\n- Added option command `--legacy-options` (set patch option via options.json file)\r\n- Added option command `--rip-libs` (remove native libs from apk)\r\n- Added option command `--unsigned` (disable signing of the final apk, regardless of whether it is mounted or not)\r\n- Added support anti-split (merged some [REAndroid/ARSCLib](https://github.com/REAndroid/ARSCLib) sources to implement anti-split)\r\n\r\n",
+        "PublishedOn": "2024-12-08T09:50:42Z"
+    },
+    "anddea/revanced-patches": {
+        "ResourceName": "[anddea/revanced-patches](https://github.com/anddea/revanced-patches/releases/tag/v3.10.0-dev.3)",
+        "Version": "v3.10.0-dev.3",
+        "Changelog": "# [3.10.0-dev.3](https://github.com/anddea/revanced-patches/compare/v3.10.0-dev.2...v3.10.0-dev.3) (2025-06-07)\n\n\n### Bug Fixes\n\n* **YouTube Music:** 8.16+ crashed on like/dislike ([4ac726e](https://github.com/anddea/revanced-patches/commit/4ac726e367f828d92b2bb8309b65179657e77029))\n\n\n### Features\n\n* **YouTube - Shorts components:** Add `Hide new posts button` setting ([6e4a191](https://github.com/anddea/revanced-patches/commit/6e4a191ae4d3f3eca7df0715cd396a1d92d8806c))\n\n\n\n",
+        "PublishedOn": "2025-06-07T20:48:15Z"
+    },
+    "inotia00/revanced-patches": {
+        "ResourceName": "[inotia00/revanced-patches](https://github.com/inotia00/revanced-patches/releases/tag/v5.6.2)",
+        "Version": "v5.6.2",
+        "Changelog": "YouTube\r\n==\r\n- feat(YouTube - Disable resuming Shorts on startup): Match with ReVanced (Closes https://github.com/inotia00/ReVanced_Extended/issues/2903)\r\n- feat(YouTube - Hook download actions, Overlay buttons): Add `Add to queue and reload video` and `Remove from queue and reload video` settings, fixed a bug where the queue was unavailable under certain conditions\r\n- feat(YouTube - Settings): Add `App name`, `App version` and `Patched date` to patch information\r\n- feat(YouTube - Settings): Place RVX settings at top of settings by default https://github.com/inotia00/revanced-patches/pull/147\r\n- fix(YouTube - Custom branding icon): Splash animation background color is always white https://github.com/inotia00/ReVanced_Extended/issues/2892\r\n- fix(YouTube - Description components): `Expand video descriptions` requires longer wait time\r\n- fix(YouTube - Hook download actions, Overlay buttons): Auth key is set before the Context is initialized\r\n- fix(YouTube - Swipe controls): Patch fails on YouTube 19.43.41 when `Player components` patch is included\r\n- fix(YouTube - Video playback): Overridden to default playback speed in `onResume` callback https://github.com/inotia00/ReVanced_Extended/issues/2896\r\n\r\n\r\nReddit\r\n==\r\n- feat(Reddit): Change the latest supported version from `2025.12.0` to `2025.12.1`\r\n- fix(Reddit - Disable screenshot popup): Patch does not work in certain environments https://github.com/inotia00/ReVanced_Extended/issues/2891\r\n- fix(Reddit - Remove subreddit dialog): Can't open post from search results\r\n- fix(Reddit - Remove subreddit dialog): New type of NSFW dialog not hidden https://github.com/inotia00/ReVanced_Extended/issues/2895\r\n\r\n\r\nShared\r\n==\r\n- feat(GmsCore support): Add patch option `Patch all manifest components`\r\n\r\n\r\nAnnouncement\r\n==\r\n- **There is a change in `options.json`. If you see warnings related to patch options, remove the `options.json` file or `Patch options`.**\r\n- Compatible ReVanced Manager: [RVX Manager v1.23.5 (fork)](https://github.com/inotia00/revanced-manager/releases/tag/v1.23.5).\r\n\r\n\r\nContribute to translation\r\n==\r\n- [YouTube](https://crowdin.com/project/revancedextended)\r\n- [YT Music](https://crowdin.com/project/revancedmusicextended)",
+        "PublishedOn": "2025-04-03T01:24:56Z"
+    },
+    "ReVanced/revanced-patches": {
+        "ResourceName": "[ReVanced/revanced-patches](https://github.com/ReVanced/revanced-patches/releases/tag/v5.28.0-dev.2)",
+        "Version": "v5.28.0-dev.2",
+        "Changelog": "# [5.28.0-dev.2](https://github.com/ReVanced/revanced-patches/compare/v5.28.0-dev.1...v5.28.0-dev.2) (2025-06-11)\n\n\n### Bug Fixes\n\n* **Google Photos:** Resolve startup crash if MicroG GmsCore does not already have granted permissions ([a93d74d](https://github.com/ReVanced/revanced-patches/commit/a93d74d26e7ef87a3745df2b9fe82722d65a0e59))\n\n\n\n",
+        "PublishedOn": "2025-06-11T17:45:18Z"
+    },
+    "revanced/revanced-patches": {
+        "ResourceName": "[revanced/revanced-patches](https://github.com/ReVanced/revanced-patches/releases/tag/v5.28.0-dev.2)",
+        "Version": "v5.28.0-dev.2",
+        "Changelog": "# [5.28.0-dev.2](https://github.com/ReVanced/revanced-patches/compare/v5.28.0-dev.1...v5.28.0-dev.2) (2025-06-11)\n\n\n### Bug Fixes\n\n* **Google Photos:** Resolve startup crash if MicroG GmsCore does not already have granted permissions ([a93d74d](https://github.com/ReVanced/revanced-patches/commit/a93d74d26e7ef87a3745df2b9fe82722d65a0e59))\n\n\n\n",
+        "PublishedOn": "2025-06-11T17:45:18Z"
+    },
+    "crimera/piko": {
+        "ResourceName": "[crimera/piko](https://github.com/crimera/piko/releases/tag/v1.54.0-dev.7)",
+        "Version": "v1.54.0-dev.7",
+        "Changelog": "## [1.54.0-dev.7](https://github.com/crimera/piko/compare/v1.54.0-dev.6...v1.54.0-dev.7) (2025-06-09)\n\n### Bug Fixes\n\n* **Twitter:** Fix `Enable Undo Posts` patch ([883b6cb](https://github.com/crimera/piko/commit/883b6cb92c52d1a475f6663bdf474518280b4da4))\n* **Twitter:** Fix `Hide nudge button` patch ([87ceb49](https://github.com/crimera/piko/commit/87ceb49f841c99012fcbbc315edc1c4657376e37))\n* **Twitter:** Fix Settings crash ([015c5bd](https://github.com/crimera/piko/commit/015c5bdd1247ec6263fa194ca6e580690e13e223))\n* **ui:** adjust monet-light colors to have a white background ([0906e93](https://github.com/crimera/piko/commit/0906e93027747e43becd1d94bca24f54ecc97683))\n",
+        "PublishedOn": "2025-06-09T00:45:05Z"
+    }
+}
