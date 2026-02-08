@@ -1,0 +1,97 @@
+[ {
+  "patchName" : "Change version code",
+  "options" : [ {
+    "key" : "versionCode",
+    "value" : "2147483647"
+  } ]
+}, {
+  "patchName" : "Custom branding name for YouTube Music",
+  "options" : [ {
+    "key" : "appNameNotification",
+    "value" : "RVX YT Music"
+  }, {
+    "key" : "appNameLauncher",
+    "value" : "RVX YT Music"
+  } ]
+}, {
+  "patchName" : "GmsCore support",
+  "options" : [ {
+    "key" : "gmsCoreVendorGroupId",
+    "value" : "app.revanced"
+  }, {
+    "key" : "checkGmsCore",
+    "value" : true
+  }, {
+    "key" : "packageNameYouTube",
+    "value" : "anddea.youtube"
+  }, {
+    "key" : "packageNameYouTubeMusic",
+    "value" : "anddea.youtube.music"
+  }, {
+    "key" : "patchAllManifest",
+    "value" : true
+  } ]
+}, {
+  "patchName" : "Settings for YouTube Music",
+  "options" : [ {
+    "key" : "rvxSettingsLabel",
+    "value" : "RVX"
+  }, {
+    "key" : "settingsSummaries",
+    "value" : true
+  } ]
+}, {
+  "patchName" : "Custom branding name for Reddit",
+  "options" : [ {
+    "key" : "appName",
+    "value" : "RVX Reddit"
+  } ]
+}, {
+  "patchName" : "Change package name",
+  "options" : [ {
+    "key" : "packageNameReddit",
+    "value" : "anddea.reddit.frontpage"
+  } ]
+}, {
+  "patchName" : "Change package name",
+  "options" : [ {
+    "key" : "packageNameSpotify",
+    "value" : "anddea.spotify"
+  } ]
+}, {
+  "patchName" : "Settings for Reddit",
+  "options" : [ {
+    "key" : "rvxSettingsLabel",
+    "value" : "RVX"
+  } ]
+}, {
+  "patchName" : "Custom branding name for Spotify",
+  "options" : [ {
+    "key" : "appName",
+    "value" : "RVX Spotify"
+  } ]
+}, {
+  "patchName" : "Custom branding name for YouTube",
+  "options" : [ {
+    "key" : "appName",
+    "value" : "RVX YouTube"
+  } ]
+}, {
+  "patchName" : "Spoof streaming data",
+  "options" : [ {
+    "key" : "useIOSClient",
+    "value" : false
+  } ]
+}, {
+  "patchName" : "Settings for YouTube",
+  "options" : [ {
+    "key" : "insertPosition",
+    "value" : "@string/parent_tools_key"
+  }, {
+    "key" : "rvxSettingsLabel",
+    "value" : "RVX"
+  }, {
+    "key" : "settingsSummaries",
+    "value" : true
+  } ]
+} ]
