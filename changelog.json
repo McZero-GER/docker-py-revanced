@@ -1,1 +1,32 @@
-{}
+{
+    "MorpheApp/MicroG-RE": {
+        "ResourceName": "[MorpheApp/MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases/tag/6.1.1)",
+        "Version": "6.1.1",
+        "Changelog": "### Bug Fixes\r\n\r\n- Resolve login errors (627f49218560157222c1c9b5eeb2844374f955ba)\r\n\r\n**Full Changelog**: https://github.com/MorpheApp/MicroG-RE/compare/6.1.0...v6.1.1",
+        "PublishedOn": "2026-02-14T15:04:45Z"
+    },
+    "REAndroid/APKEditor": {
+        "ResourceName": "[REAndroid/APKEditor](https://github.com/REAndroid/APKEditor/releases/tag/V1.4.7)",
+        "Version": "V1.4.7",
+        "Changelog": "## What's Changed\r\n* Set smali comment level to `basic` (For faster smali deompiling):https://github.com/REAndroid/APKEditor/commit/a5390a3401153ab9ac38b4487a279316eee7400d\r\n* Fix: Protector - dictionaries options by @Kirlif in https://github.com/REAndroid/APKEditor/pull/218\r\n\r\n\r\n**Full Changelog**: https://github.com/REAndroid/APKEditor/compare/V1.4.6...V1.4.7",
+        "PublishedOn": "2025-12-28T11:00:45Z"
+    },
+    "anddea/revanced-patches": {
+        "ResourceName": "[anddea/revanced-patches](https://github.com/anddea/revanced-patches/releases/tag/v4.0.0-dev.5)",
+        "Version": "v4.0.0-dev.5",
+        "Changelog": "# [4.0.0-dev.5](https://github.com/anddea/revanced-patches/compare/v4.0.0-dev.4...v4.0.0-dev.5) (2026-02-20)\n\n\n### Bug Fixes\n\n* **YouTube - GmsCore:** Crashes because of the wrong intent ([829ec70](https://github.com/anddea/revanced-patches/commit/829ec708013b8a4aa66b8de59c74d0d307491e1b))\n\n\n\n",
+        "PublishedOn": "2026-02-20T18:03:39Z"
+    },
+    "MorpheApp/morphe-cli": {
+        "ResourceName": "[MorpheApp/morphe-cli](https://github.com/MorpheApp/morphe-cli/releases/tag/v1.4.0-dev.6)",
+        "Version": "v1.4.0-dev.6",
+        "Changelog": "# [1.4.0-dev.6](https://github.com/MorpheApp/morphe-cli/compare/v1.4.0-dev.5...v1.4.0-dev.6) (2026-02-19)\r\n\r\n\r\n### Features\r\n\r\n* Add `--options-file` json patch/option configuration ([#53](https://github.com/MorpheApp/morphe-cli/issues/53)) ([44943da](https://github.com/MorpheApp/morphe-cli/commit/44943da5f40f8ec37364d4f67b9d2e82d2b5e98f))\r\n\r\n\r\n\r\n",
+        "PublishedOn": "2026-02-19T10:46:51Z"
+    },
+    "MorpheApp/morphe-patches": {
+        "ResourceName": "[MorpheApp/morphe-patches](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.15.0-dev.4)",
+        "Version": "v1.15.0-dev.4",
+        "Changelog": "# [1.15.0-dev.4](https://github.com/MorpheApp/morphe-patches/compare/v1.15.0-dev.3...v1.15.0-dev.4) (2026-02-20)\n\n\n### Features\n\n* **Spoof video streams:** Add `Android Reel` client ([#580](https://github.com/MorpheApp/morphe-patches/issues/580)) ([01bbde3](https://github.com/MorpheApp/morphe-patches/commit/01bbde3dfea162eedf9af36dddffaba5d750db73))\n\n\n\n",
+        "PublishedOn": "2026-02-20T12:27:40Z"
+    }
+}
