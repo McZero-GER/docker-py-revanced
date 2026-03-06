@@ -4,7 +4,7 @@
     "options": [
       {
         "key": "packageName",
-        "value": "app.morphe.android.apps.youtube.music"
+        "value": "com.google.android.apps.youtube.music.dockerpy"
       }
     ]
   },
