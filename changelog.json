@@ -1,1 +1,26 @@
-{}
+{
+    "MorpheApp/MicroG-RE": {
+        "ResourceName": "[MorpheApp/MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases/tag/6.1.1)",
+        "Version": "6.1.1",
+        "Changelog": "### Bug Fixes\r\n\r\n- Resolve login errors (627f49218560157222c1c9b5eeb2844374f955ba)\r\n\r\n**Full Changelog**: https://github.com/MorpheApp/MicroG-RE/compare/6.1.0...v6.1.1",
+        "PublishedOn": "2026-02-14T15:04:45Z"
+    },
+    "REAndroid/APKEditor": {
+        "ResourceName": "[REAndroid/APKEditor](https://github.com/REAndroid/APKEditor/releases/tag/V1.4.8)",
+        "Version": "V1.4.8",
+        "Changelog": "## What's Changed\r\n\r\n* Improve performance by @wchill in https://github.com/REAndroid/ARSCLib/pull/98\r\n* Update Decompile info on README.md by @yonggamer in https://github.com/REAndroid/APKEditor/pull/219\r\n\r\n\r\n**Full Changelog**: https://github.com/REAndroid/APKEditor/compare/V1.4.7...V1.4.8\r\n\r\n## New Contributors\r\n* @wchill made their first contribution in https://github.com/REAndroid/ARSCLib/pull/98",
+        "PublishedOn": "2026-03-21T13:30:55Z"
+    },
+    "MorpheApp/morphe-cli": {
+        "ResourceName": "[MorpheApp/morphe-cli](https://github.com/MorpheApp/morphe-cli/releases/tag/v1.6.4-dev.2)",
+        "Version": "v1.6.4-dev.2",
+        "Changelog": "## [1.6.4-dev.2](https://github.com/MorpheApp/morphe-cli/compare/v1.6.4-dev.1...v1.6.4-dev.2) (2026-03-31)\n\n\n### Bug Fixes\n\n* Use same default keystore values as Morphe Manager ([#96](https://github.com/MorpheApp/morphe-cli/issues/96)) ([2d70c01](https://github.com/MorpheApp/morphe-cli/commit/2d70c016f293ba382266fb5c800073f763d633d8))\n\n\n\n",
+        "PublishedOn": "2026-03-31T07:48:59Z"
+    },
+    "MorpheApp/morphe-patches": {
+        "ResourceName": "[MorpheApp/morphe-patches](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.23.0-dev.3)",
+        "Version": "v1.23.0-dev.3",
+        "Changelog": "# [1.23.0-dev.3](https://github.com/MorpheApp/morphe-patches/compare/v1.23.0-dev.2...v1.23.0-dev.3) (2026-04-02)\n\n\n### Bug Fixes\n\n* **YouTube:** Swiping back on home feed does not close the app ([74a5074](https://github.com/MorpheApp/morphe-patches/commit/74a5074991ec935d0588843b1067a084944c2e42))\n\n\n### Features\n\n* **YouTube Music:** Add experimental support for `9.13.50` ([bd462e5](https://github.com/MorpheApp/morphe-patches/commit/bd462e5ab274968878314295b7238ae9371564d0))\n\n\n\n",
+        "PublishedOn": "2026-04-02T09:34:06Z"
+    }
+}
