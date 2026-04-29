@@ -1,1 +1,32 @@
-{}
+{
+    "MorpheApp/MicroG-RE": {
+        "ResourceName": "[MorpheApp/MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases/tag/6.1.4)",
+        "Version": "6.1.4",
+        "Changelog": "### Bug Fixes\r\n\r\n- Prevent crash on sign-in due to missing user avatar (815b9711af43ad79f9c460f4942eafc3a210ba62)\r\n\r\n**Full Changelog**: https://github.com/MorpheApp/MicroG-RE/compare/6.1.3...6.1.4",
+        "PublishedOn": "2026-04-28T17:13:14Z"
+    },
+    "REAndroid/APKEditor": {
+        "ResourceName": "[REAndroid/APKEditor](https://github.com/REAndroid/APKEditor/releases/tag/V1.4.8)",
+        "Version": "V1.4.8",
+        "Changelog": "## What's Changed\r\n\r\n* Improve performance by @wchill in https://github.com/REAndroid/ARSCLib/pull/98\r\n* Update Decompile info on README.md by @yonggamer in https://github.com/REAndroid/APKEditor/pull/219\r\n\r\n\r\n**Full Changelog**: https://github.com/REAndroid/APKEditor/compare/V1.4.7...V1.4.8\r\n\r\n## New Contributors\r\n* @wchill made their first contribution in https://github.com/REAndroid/ARSCLib/pull/98",
+        "PublishedOn": "2026-03-21T13:30:55Z"
+    },
+    "MorpheApp/morphe-cli": {
+        "ResourceName": "[MorpheApp/morphe-cli](https://github.com/MorpheApp/morphe-cli/releases/tag/v1.8.0-dev.9)",
+        "Version": "v1.8.0-dev.9",
+        "Changelog": "# [1.8.0-dev.9](https://github.com/MorpheApp/morphe-cli/compare/v1.8.0-dev.8...v1.8.0-dev.9) (2026-04-29)\n\n\n### Features\n\n* Custom output path + better GUI scrollbars ([#127](https://github.com/MorpheApp/morphe-cli/issues/127)) ([70e2721](https://github.com/MorpheApp/morphe-cli/commit/70e27218a87a09c26edc96fd7cb7c38dcba9c79c))\n\n\n\n",
+        "PublishedOn": "2026-04-29T07:06:24Z"
+    },
+    "crimera/piko": {
+        "ResourceName": "[crimera/piko](https://github.com/crimera/piko/releases/tag/v3.3.0-dev.3)",
+        "Version": "v3.3.0-dev.3",
+        "Changelog": "# [3.3.0-dev.3](https://github.com/crimera/piko/compare/v3.3.0-dev.2...v3.3.0-dev.3) (2026-04-26)\n\n\n### Bug Fixes\n\n* **Instagram:** Fix `Make ephemeral media permanent` patch ([fc22c94](https://github.com/crimera/piko/commit/fc22c94eb323fbc5ce12591e4a06c2dd4e590a88))\n\n\n### Features\n\n* **Instagram:** Added `Change like animation` patch ([cb759bc](https://github.com/crimera/piko/commit/cb759bcab2e754a794a907846e077a956416e363))\n* **Instagram:** Added `Customise story ring size` patch ([cfe8a55](https://github.com/crimera/piko/commit/cfe8a55423e2e1f53dbc769beb082644d1bc3689))\n* **Instagram:** Added `Unlock Plus benefits` patch ([84d9fd6](https://github.com/crimera/piko/commit/84d9fd62e12d103a833e386c90504b97a4652744))\n\n\n\n",
+        "PublishedOn": "2026-04-26T18:07:42Z"
+    },
+    "MorpheApp/morphe-patches": {
+        "ResourceName": "[MorpheApp/morphe-patches](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.25.0-dev.9)",
+        "Version": "v1.25.0-dev.9",
+        "Changelog": "# [1.25.0-dev.9](https://github.com/MorpheApp/morphe-patches/compare/v1.25.0-dev.8...v1.25.0-dev.9) (2026-04-29)\n\n\n### Features\n\n* **YouTube - Sponsorblock:** Add highlight segment submission ([#1301](https://github.com/MorpheApp/morphe-patches/issues/1301)) ([000846f](https://github.com/MorpheApp/morphe-patches/commit/000846feb0c8fafd3c67f9d2c8c759c941c13b4d))\n\n\n\n",
+        "PublishedOn": "2026-04-29T10:08:06Z"
+    }
+}
