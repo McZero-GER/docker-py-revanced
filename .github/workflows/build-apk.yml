@@ -200,6 +200,11 @@ jobs:
     name: GitHub Cleanup
     if: inputs.CLEANUP
 
+    needs: [ upload-to-telegram ]
+    uses: ./.github/workflows/github-cleanup.yml
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   permissions:
   actions: write
   artifact-metadata: write
@@ -218,7 +223,3 @@ jobs:
   repository-projects: write
   security-events: write
   statuses: write
-    needs: [ upload-to-telegram ]
-    uses: ./.github/workflows/github-cleanup.yml
-    secrets:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
