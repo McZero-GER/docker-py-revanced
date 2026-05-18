@@ -1,13 +1,11 @@
 name: Build & Release
+
 env:
   DOCKER_BUILDKIT: 1
   COMPOSE_DOCKER_CLI_BUILD: 1
   HAVE_TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID != '' }}
+
 on:
-permissions:
-  contents: write
-  actions: write
-  pull-requests: write
   workflow_call:
     inputs:
       GITHUB_UPLOAD:
@@ -91,9 +89,15 @@ permissions:
         required: false
         type: string
 
+permissions:
+  contents: write
+  actions: write
+  pull-requests: write
+
 concurrency:
   group: ${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
+
 jobs:
   build-apk:
     uses: ./.github/workflows/build-artifact.yml
@@ -203,7 +207,6 @@ jobs:
   cleanup:
     name: GitHub Cleanup
     if: inputs.CLEANUP
-
     needs: [ upload-to-telegram ]
     uses: ./.github/workflows/github-cleanup.yml
     secrets:
