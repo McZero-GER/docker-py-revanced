@@ -90,9 +90,23 @@ on:
         type: string
 
 permissions:
-  contents: write
   actions: write
+  artifact-metadata: write
+  attestations: write
+  checks: write
+  code-quality: write
+  contents: write
+  deployments: write
+  discussions: write
+  issues: write
+  models: read
+  vulnerability-alerts: read
+  packages: write
+  pages: write
   pull-requests: write
+  repository-projects: write
+  security-events: write
+  statuses: write
 
 concurrency:
   group: ${{ github.head_ref || github.run_id }}
