@@ -208,8 +208,4 @@ jobs:
 permissions:
   contents: write
   actions: write
-  artifacts: write
-  checks: write
   pull-requests: write
-  issues: write
-  packages: write
