@@ -10,6 +10,7 @@ from types import SimpleNamespace
 from typing import Self, cast
 from unittest import TestCase
 from unittest.mock import patch
+from zipfile import ZipFile
 
 from src.config import RevancedConfig
 from src.downloader.download import Downloader
@@ -38,7 +39,25 @@ class _BinaryResponse:
 
 def _config(temp_folder: Path) -> RevancedConfig:
     """Build only the config fields needed by the direct downloader."""
-    return cast("RevancedConfig", SimpleNamespace(personal_access_token=None, dry_run=False, temp_folder=temp_folder))
+    return cast(
+        "RevancedConfig",
+        # These are the downloader policy fields exercised by the tests without constructing the full env config.
+        SimpleNamespace(
+            apk_editor="apkeditor.jar",
+            personal_access_token=None,
+            dry_run=False,
+            disable_caching=False,
+            temp_folder=temp_folder,
+        ),
+    )
+
+
+def _write_zip(path: Path, names: list[str]) -> None:
+    """Create a small archive with controlled entries so APK shape detection is deterministic."""
+    with ZipFile(path, "w") as zip_file:
+        for name in names:
+            # Entry contents do not matter; only root filenames drive the merge decision.
+            zip_file.writestr(name, b"content")
 
 
 class DirectDownloadTests(TestCase):
@@ -54,6 +73,7 @@ class DirectDownloadTests(TestCase):
                 Downloader(config).direct_download("https://api.revanced.app/v5/patches.rvp", "patches.rvp")
 
         self.assertEqual("application/octet-stream", request_get.call_args.kwargs["headers"]["Accept"])
+        self.assertIn("timeout", request_get.call_args.kwargs)
 
     def test_existing_partial_file_is_replaced_when_size_does_not_match(self: Self) -> None:
         """Interrupted downloads should be retried instead of treating a partial target as cache-valid."""
@@ -84,3 +104,47 @@ class DirectDownloadTests(TestCase):
             self.assertEqual(b"cached-patch-bundle", target.read_bytes())
             self.assertEqual([], list(Path(tmp_dir).glob(".patches.rvp.*.part")))
             self.assertTrue(response.closed)
+
+    def test_existing_complete_file_is_replaced_when_caching_is_disabled(self: Self) -> None:
+        """DISABLE_CACHING should force a fresh download even when a complete artifact exists."""
+        with TemporaryDirectory() as tmp_dir:
+            config = _config(Path(tmp_dir))
+            config.disable_caching = True
+            target = Path(tmp_dir, "patches.rvp")
+            target.write_bytes(b"cached-patch-bundle")
+            response = _BinaryResponse(b"fresh-patch-bundle")
+
+            with patch("src.downloader.download.session.get", return_value=response):
+                Downloader(config).direct_download("https://api.revanced.app/v5/patches.rvp", "patches.rvp")
+
+            self.assertEqual(b"fresh-patch-bundle", target.read_bytes())
+            self.assertEqual([], list(Path(tmp_dir).glob(".patches.rvp.*.part")))
+            self.assertTrue(response.closed)
+
+    def test_convert_to_apk_keeps_real_apk_without_apkeditor(self: Self) -> None:
+        """A proper APK should not be passed through APKEditor just because APKs are zip archives."""
+        with TemporaryDirectory() as tmp_dir:
+            config = _config(Path(tmp_dir))
+            _write_zip(Path(tmp_dir, "youtube.apk"), ["AndroidManifest.xml", "resources.arsc"])
+
+            with patch("src.downloader.download.subprocess.run") as subprocess_run:
+                output_file = Downloader(config).convert_to_apk("youtube.apk")
+
+        self.assertEqual("youtube.apk", output_file)
+        subprocess_run.assert_not_called()
+
+    def test_convert_to_apk_merges_xapk_archive_misnamed_as_apk(self: Self) -> None:
+        """Uptodown can return split APK archives with `.apk` names, so content decides conversion."""
+        with TemporaryDirectory() as tmp_dir:
+            config = _config(Path(tmp_dir))
+            app_archive = Path(tmp_dir, "youtube_music.apk")
+            _write_zip(app_archive, ["base.apk", "split_config.arm64_v8a.apk"])
+
+            with patch("src.downloader.download.subprocess.run") as subprocess_run:
+                output_file = Downloader(config).convert_to_apk("youtube_music.apk")
+
+            command = subprocess_run.call_args.args[0]
+
+        self.assertEqual("youtube_music.apk", output_file)
+        self.assertIn(f"{tmp_dir}/youtube_music.xapk", command)
+        self.assertIn(f"{tmp_dir}/youtube_music.apk", command)
