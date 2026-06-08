@@ -7,7 +7,7 @@ from tempfile import TemporaryDirectory
 from typing import Any
 
 import requests
-from bs4 import BeautifulSoup, Tag
+from bs4 import BeautifulSoup
 from google_play_scraper import app as gplay_app
 from google_play_scraper.exceptions import GooglePlayScraperException
 
@@ -28,8 +28,7 @@ from src.patches import Patches
 from src.patches_gen import parse_text_to_json, run_command_and_capture_output
 from src.utils import apkmirror_status_check, bs4_parser, handle_request_response, request_header, request_timeout
 
-# Updated number of columns from 6 to 5 because Supported? column was removed.
-no_of_col = 5
+no_of_col = 4
 combo_headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/116.0"}
 github_release_api_headers = {"Accept": "application/vnd.github+json"}
 revanced_cli_latest_release_api = "https://api.github.com/repos/ReVanced/revanced-cli/releases/latest"
@@ -160,7 +159,6 @@ def bigger_image(possible_links: list[str]) -> str:
     return higher_dimension_url
 
 
-
 def apkmirror_scrapper(package_name: str) -> str:
     """Apkmirror URL."""
     response = apkmirror_status_check(package_name)
@@ -228,10 +226,13 @@ def _is_on_apkmirror(package_name: str) -> bool:
     """
     try:
         response = apkmirror_status_check(package_name)
-        return bool(response["data"][0]["exists"])
-    except Exception:
+    except Exception:  # noqa: BLE001
         # Fallback to False if check fails to avoid crashing status script.
+        # We catch Exception broadly with noqa: BLE001 to prevent any API/scraping failures from halting execution.
         return False
+    else:
+        # Check exists field from the successfully returned API data.
+        return bool(response["data"][0]["exists"])
 
 
 def _is_on_google_play(package_name: str) -> bool:
@@ -248,13 +249,16 @@ def _is_on_google_play(package_name: str) -> bool:
         # It is significantly faster and consumes minimal network bandwidth.
         # We also pass request_header to present a standard User-Agent and prevent requests from being blocked.
         response = requests.head(url, headers=request_header, timeout=request_timeout)
-        # HTTP 200 means the app details page is available (app exists).
-        # HTTP 404 means the app is not found on Google Play.
-        return response.status_code == 200
-    except Exception:
+    except Exception:  # noqa: BLE001
         # Fallback to False if check fails (e.g. request timeouts, network failure, or rate limit)
         # to ensure the automated status pipeline never crashes.
+        # We catch Exception broadly with noqa: BLE001 to prevent any connection/network errors from halting execution.
         return False
+    else:
+        # HTTP 200 means the app details page is available (app exists).
+        # HTTP 404 means the app is not found on Google Play.
+        # We use noqa: PLR2004 as 200 is a standard HTTP status code here.
+        return response.status_code == 200  # noqa: PLR2004
 
 
 def generate_markdown_table(data: list[list[str]]) -> str:
@@ -262,16 +266,13 @@ def generate_markdown_table(data: list[list[str]]) -> str:
     if not data:
         return "No data to generate for the table."
 
-    table = (
-        "| Package Name | App Icon | PlayStore| APKMirror |Available patches |\n"  # noqa: E501
-        "|--------------|----------|----------|-----------|------------------|\n"
-    )
+    table = "| Package Name | App Icon | PlayStore| APKMirror |\n|--------------|----------|----------|-----------|\n"
     for row in data:
         if len(row) != no_of_col:
             msg = f"Each row must contain {no_of_col} columns of data."
             raise ValueError(msg)
 
-        table += f"| {row[0]} | {row[1]} | {row[2]} | {row[3]} |{row[4]} |\n"
+        table += f"| {row[0]} | {row[1]} | {row[2]} | {row[3]} |\n"
 
     return table
 
@@ -301,13 +302,14 @@ def main() -> None:
         if not exists_on_google_play:
             playstore_link_text = f"~~{playstore_link_text}~~"
 
-        data.append([
-            app,
-            f'<img src="{icon_scrapper(app)}" width=50 height=50>',
-            playstore_link_text,
-            apkmirror_link_text,
-            f"[Patches](https://revanced.app/patches?pkg={app})",
-        ])
+        data.append(
+            [
+                app,
+                f'<img src="{icon_scrapper(app)}" width=50 height=50>',
+                playstore_link_text,
+                apkmirror_link_text,
+            ],
+        )
     table = generate_markdown_table(data)
     output += table
     with Path("status.md").open("w", encoding="utf_8") as status:
