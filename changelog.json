@@ -1,1 +1,32 @@
-{}
+{
+    "MorpheApp/MicroG-RE": {
+        "ResourceName": "[MorpheApp/MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases/tag/6.1.4)",
+        "Version": "6.1.4",
+        "Changelog": "### Bug Fixes\r\n\r\n- Prevent crash on sign-in due to missing user avatar (815b9711af43ad79f9c460f4942eafc3a210ba62)\r\n\r\n**Full Changelog**: https://github.com/MorpheApp/MicroG-RE/compare/6.1.3...6.1.4",
+        "PublishedOn": "2026-04-28T17:13:14Z"
+    },
+    "REAndroid/APKEditor": {
+        "ResourceName": "[REAndroid/APKEditor](https://github.com/REAndroid/APKEditor/releases/tag/V1.4.9)",
+        "Version": "V1.4.9",
+        "Changelog": "## What's Changed\r\n* Fix: Merging issue #228 \r\n* Fix: Smali wide register handling #229 \r\n\r\n\r\n**Full Changelog**: https://github.com/REAndroid/APKEditor/compare/V1.4.8...V1.4.9",
+        "PublishedOn": "2026-05-19T11:25:01Z"
+    },
+    "MorpheApp/morphe-cli": {
+        "ResourceName": "[MorpheApp/morphe-cli](https://github.com/MorpheApp/morphe-cli/releases/tag/v1.10.0-dev.3)",
+        "Version": "v1.10.0-dev.3",
+        "Changelog": "# [1.10.0-dev.3](https://github.com/MorpheApp/morphe-cli/compare/v1.10.0-dev.2...v1.10.0-dev.3) (2026-06-23)\n\n\n### Bug Fixes\n\n* Handle GUI patching xapk / apks, add distinct patch-source channel colors, improve patch loading errors ([#180](https://github.com/MorpheApp/morphe-cli/issues/180)) ([d8245f0](https://github.com/MorpheApp/morphe-cli/commit/d8245f081b507cac74b06e16120e4271ce0e1f96))\n",
+        "PublishedOn": "2026-06-23T07:50:50Z"
+    },
+    "crimera/piko": {
+        "ResourceName": "[crimera/piko](https://github.com/crimera/piko/releases/tag/v3.7.0-dev.7)",
+        "Version": "v3.7.0-dev.7",
+        "Changelog": "## [3.7.0-dev.7](https://github.com/crimera/piko/compare/v3.7.0-dev.6...v3.7.0-dev.7) (2026-06-25)\n\n### \ud83d\udd27 Improvements\n\n* **Instagram:** Remove debug code ([7646088](https://github.com/crimera/piko/commit/764608824d033f8ab23cc35c19d25872c233d466))\n",
+        "PublishedOn": "2026-06-25T19:29:14Z"
+    },
+    "MorpheApp/morphe-patches": {
+        "ResourceName": "[MorpheApp/morphe-patches](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.33.0-dev.2)",
+        "Version": "v1.33.0-dev.2",
+        "Changelog": "## [1.33.0-dev.2](https://github.com/MorpheApp/morphe-patches/compare/v1.33.0-dev.1...v1.33.0-dev.2) (2026-06-26)\n\n### \ud83d\udc1b Bug Fixes\n\n* **YouTube - Hide layout components:**  Match `RD` playlist URLs to improve \"Hide mix playlists\" filter ([#1835](https://github.com/MorpheApp/morphe-patches/issues/1835)) ([1172ce0](https://github.com/MorpheApp/morphe-patches/commit/1172ce044f14cc842eb6390d997d7793f8e2b4c3))\n\n### \u2728 New Features\n\n* **YouTube:** Add `Voice over translation` patch ([#1685](https://github.com/MorpheApp/morphe-patches/issues/1685)) ([d811a32](https://github.com/MorpheApp/morphe-patches/commit/d811a3264878d01697eb75bd05185d9359603a4a))\n",
+        "PublishedOn": "2026-06-26T09:31:44Z"
+    }
+}
