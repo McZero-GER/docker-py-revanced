@@ -1,1 +1,384 @@
-{}
+{
+    "REDDIT_MORPHE": {
+        "app_version": "2026.40.0",
+        "patches_versions": [
+            "v2.1.0-dev.8"
+        ],
+        "cli_version": "v1.20.0",
+        "ms_epoch_since_patched": 1793794200624,
+        "date_patched": "2026-11-04 12:10:00.624202+05:30",
+        "app_dump": {
+            "app_name": "REDDIT_MORPHE",
+            "app_version": "2026.40.0",
+            "experiment": false,
+            "cli_dl": "https://github.com/MorpheApp/morphe-desktop/releases/latest-release",
+            "patches_dl_list": [
+                "https://github.com/MorpheApp/morphe-patches/releases/latest-prerelease"
+            ],
+            "patches_dl": "https://github.com/MorpheApp/morphe-patches/releases/latest-prerelease",
+            "exclude_request": [],
+            "include_request": [
+                "clone-app",
+                "disable-play-store-updates"
+            ],
+            "resource": {
+                "cli": {
+                    "file_name": "f435271f2569caef6e8c42a5ddc65a7ffed4924aa337334eddc9ba76604b204e.jar",
+                    "version": "v1.20.0"
+                },
+                "patches": {
+                    "file_name": "8c6663beba614cd0a34b7b44b3562d203484b60086408ccf3dee95d6f5575db8.mpp",
+                    "version": "v2.1.0-dev.8"
+                }
+            },
+            "patch_bundles": [
+                {
+                    "name": "patches",
+                    "file_name": "8c6663beba614cd0a34b7b44b3562d203484b60086408ccf3dee95d6f5575db8.mpp",
+                    "version": "v2.1.0-dev.8"
+                }
+            ],
+            "no_of_patches": 31,
+            "keystore_name": "revanced.keystore",
+            "archs_to_build": [
+                "arm64-v8a"
+            ],
+            "options_file": "options.json",
+            "download_file_name": "REDDIT_MORPHE.apkm",
+            "download_dl": "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=16376567&key=2fcd04c0fb3152f5c392b5b157df963793b05eaf",
+            "download_source": "https://www.apkmirror.com/apk/redditinc/reddit/",
+            "package_name": "com.reddit.frontpage",
+            "old_key": true,
+            "patches": [],
+            "space_formatted": true,
+            "cli_argsf": "morphe-cli",
+            "effective_cli_argsf": "morphe-cli",
+            "cli_lpargs": "",
+            "cli_pargs": "",
+            "cli_lp_args": {
+                "CMD": "list-patches",
+                "DESCRIPTIONS": "",
+                "FILTER_PACKAGE_NAME": "",
+                "INDEX": "-i",
+                "OPTIONS": "-o",
+                "PACKAGES": "-p",
+                "PATCHES": "--patches",
+                "PATCHES_POST": "",
+                "TEMPORARY_FILES_PATH": "",
+                "UNIVERSAL": "-u",
+                "VERSIONS": "-v"
+            },
+            "cli_p_args": {
+                "APK": "__POSITIONAL__",
+                "CMD": "patch",
+                "CONTINUE_ON_ERROR": "--continue-on-error",
+                "DISABLED": "-d",
+                "ENABLED": "-e",
+                "EXCLUSIVE": "--exclusive",
+                "FORCE": "--force",
+                "KEYSTORE": "--keystore",
+                "KEYSTORE_ENTRY_ALIAS": "--keystore-entry-alias=alias",
+                "KEYSTORE_ENTRY_PASSWORD": "--keystore-entry-password=ReVanced",
+                "KEYSTORE_PASSWORD": "--keystore-password=ReVanced",
+                "OPTIONS": "-O",
+                "OUTPUT": "-o",
+                "PATCHES": "-p",
+                "PATCHES_POST": "",
+                "PURGE": "",
+                "RIP_LIB": "",
+                "STRIPLIBS": "--striplibs",
+                "TEMPORARY_FILES_PATH": "-t"
+            },
+            "_cached_output_file_name": "ReREDDIT_MORPHE-Version2026.40.0-PatchVersionv2.1.0.dev.8-PatchSete7d8810f20f5-2026NOV04.1210PM-output.apk"
+        },
+        "output_file_name": "ReREDDIT_MORPHE-Version2026.40.0-PatchVersionv2.1.0.dev.8-PatchSete7d8810f20f5-2026NOV04.1210PM-output.apk"
+    },
+    "YOUTUBE_MORPHE": {
+        "app_version": "21.30.216",
+        "patches_versions": [
+            "v2.1.0"
+        ],
+        "cli_version": "v2.1.0",
+        "ms_epoch_since_patched": 1793995229964,
+        "date_patched": "2026-11-06 20:00:29.963760+05:30",
+        "app_dump": {
+            "app_name": "YOUTUBE_MORPHE",
+            "app_version": "21.30.216",
+            "experiment": false,
+            "cli_dl": "https://github.com/MorpheApp/morphe-desktop/releases/latest-release",
+            "patches_dl_list": [
+                "https://github.com/MorpheApp/morphe-patches/releases/latest-prerelease"
+            ],
+            "patches_dl": "https://github.com/MorpheApp/morphe-patches/releases/latest-prerelease",
+            "exclude_request": [
+                "enable-debugging",
+                "theme"
+            ],
+            "include_request": [
+                "clone-app",
+                "disable-play-store-updates"
+            ],
+            "resource": {
+                "cli": {
+                    "file_name": "11c6346c6b6982e0bbf50e9d3f0b1df5a1dee524a26766472329a18965a35823.jar",
+                    "version": "v2.1.0"
+                },
+                "patches": {
+                    "file_name": "ffc552ca90f4409edc2d9da1ca33fdc09b903662cc100f6943c0a2230cf4008a.mpp",
+                    "version": "v2.1.0"
+                }
+            },
+            "patch_bundles": [
+                {
+                    "name": "patches",
+                    "file_name": "ffc552ca90f4409edc2d9da1ca33fdc09b903662cc100f6943c0a2230cf4008a.mpp",
+                    "version": "v2.1.0"
+                }
+            ],
+            "no_of_patches": 113,
+            "keystore_name": "revanced.keystore",
+            "archs_to_build": [
+                "arm64-v8a"
+            ],
+            "options_file": "options.json",
+            "download_file_name": "YOUTUBE_MORPHE.apk",
+            "download_dl": "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=15211465&key=cb6211c19cacb3979f905f8befbb5087d540d577&forcebaseapk=true",
+            "download_source": "https://www.apkmirror.com/apk/google-inc/youtube/",
+            "package_name": "com.google.android.youtube",
+            "old_key": true,
+            "patches": [],
+            "space_formatted": true,
+            "cli_argsf": "morphe-cli",
+            "effective_cli_argsf": "morphe-cli",
+            "cli_lpargs": "",
+            "cli_pargs": "",
+            "cli_lp_args": {
+                "CMD": "list-patches",
+                "DESCRIPTIONS": "",
+                "FILTER_PACKAGE_NAME": "",
+                "INDEX": "-i",
+                "OPTIONS": "-o",
+                "PACKAGES": "-p",
+                "PATCHES": "--patches",
+                "PATCHES_POST": "",
+                "TEMPORARY_FILES_PATH": "",
+                "UNIVERSAL": "-u",
+                "VERSIONS": "-v"
+            },
+            "cli_p_args": {
+                "APK": "__POSITIONAL__",
+                "CMD": "patch",
+                "CONTINUE_ON_ERROR": "--continue-on-error",
+                "DISABLED": "-d",
+                "ENABLED": "-e",
+                "EXCLUSIVE": "--exclusive",
+                "FORCE": "--force",
+                "KEYSTORE": "--keystore",
+                "KEYSTORE_ENTRY_ALIAS": "--keystore-entry-alias=alias",
+                "KEYSTORE_ENTRY_PASSWORD": "--keystore-entry-password=ReVanced",
+                "KEYSTORE_PASSWORD": "--keystore-password=ReVanced",
+                "OPTIONS": "-O",
+                "OUTPUT": "-o",
+                "PATCHES": "-p",
+                "PATCHES_POST": "",
+                "PURGE": "",
+                "RIP_LIB": "",
+                "STRIPLIBS": "--striplibs",
+                "TEMPORARY_FILES_PATH": "-t"
+            },
+            "_cached_output_file_name": "ReYOUTUBE_MORPHE-Version21.30.216-PatchVersionv2.1.0-PatchSet213fb7a7b746-2026NOV06.0800PM-output.apk"
+        },
+        "output_file_name": "ReYOUTUBE_MORPHE-Version21.30.216-PatchVersionv2.1.0-PatchSet213fb7a7b746-2026NOV06.0800PM-output.apk"
+    },
+    "YT_MUSIC_MORPHE": {
+        "app_version": "9.30.53",
+        "patches_versions": [
+            "v2.1.0"
+        ],
+        "cli_version": "v2.1.0",
+        "ms_epoch_since_patched": 1793995277252,
+        "date_patched": "2026-11-06 20:01:17.252377+05:30",
+        "app_dump": {
+            "app_name": "YT_MUSIC_MORPHE",
+            "app_version": "9.30.53",
+            "experiment": false,
+            "cli_dl": "https://github.com/MorpheApp/morphe-desktop/releases/latest-release",
+            "patches_dl_list": [
+                "https://github.com/MorpheApp/morphe-patches/releases/latest-prerelease"
+            ],
+            "patches_dl": "https://github.com/MorpheApp/morphe-patches/releases/latest-prerelease",
+            "exclude_request": [
+                "enable-debugging",
+                "theme"
+            ],
+            "include_request": [
+                "clone-app",
+                "disable-play-store-updates"
+            ],
+            "resource": {
+                "cli": {
+                    "file_name": "11c6346c6b6982e0bbf50e9d3f0b1df5a1dee524a26766472329a18965a35823.jar",
+                    "version": "v2.1.0"
+                },
+                "patches": {
+                    "file_name": "ffc552ca90f4409edc2d9da1ca33fdc09b903662cc100f6943c0a2230cf4008a.mpp",
+                    "version": "v2.1.0"
+                }
+            },
+            "patch_bundles": [
+                {
+                    "name": "patches",
+                    "file_name": "ffc552ca90f4409edc2d9da1ca33fdc09b903662cc100f6943c0a2230cf4008a.mpp",
+                    "version": "v2.1.0"
+                }
+            ],
+            "no_of_patches": 51,
+            "keystore_name": "revanced.keystore",
+            "archs_to_build": [
+                "arm64-v8a"
+            ],
+            "options_file": "options.json",
+            "download_file_name": "YT_MUSIC_MORPHE.apk",
+            "download_dl": "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=15304996&key=8ce109d409ed2ad5b9db5f96a5d02c886e836d34&forcebaseapk=true",
+            "download_source": "https://www.apkmirror.com/apk/google-inc/youtube-music/",
+            "package_name": "com.google.android.apps.youtube.music",
+            "old_key": true,
+            "patches": [],
+            "space_formatted": true,
+            "cli_argsf": "morphe-cli",
+            "effective_cli_argsf": "morphe-cli",
+            "cli_lpargs": "",
+            "cli_pargs": "",
+            "cli_lp_args": {
+                "CMD": "list-patches",
+                "DESCRIPTIONS": "",
+                "FILTER_PACKAGE_NAME": "",
+                "INDEX": "-i",
+                "OPTIONS": "-o",
+                "PACKAGES": "-p",
+                "PATCHES": "--patches",
+                "PATCHES_POST": "",
+                "TEMPORARY_FILES_PATH": "",
+                "UNIVERSAL": "-u",
+                "VERSIONS": "-v"
+            },
+            "cli_p_args": {
+                "APK": "__POSITIONAL__",
+                "CMD": "patch",
+                "CONTINUE_ON_ERROR": "--continue-on-error",
+                "DISABLED": "-d",
+                "ENABLED": "-e",
+                "EXCLUSIVE": "--exclusive",
+                "FORCE": "--force",
+                "KEYSTORE": "--keystore",
+                "KEYSTORE_ENTRY_ALIAS": "--keystore-entry-alias=alias",
+                "KEYSTORE_ENTRY_PASSWORD": "--keystore-entry-password=ReVanced",
+                "KEYSTORE_PASSWORD": "--keystore-password=ReVanced",
+                "OPTIONS": "-O",
+                "OUTPUT": "-o",
+                "PATCHES": "-p",
+                "PATCHES_POST": "",
+                "PURGE": "",
+                "RIP_LIB": "",
+                "STRIPLIBS": "--striplibs",
+                "TEMPORARY_FILES_PATH": "-t"
+            },
+            "_cached_output_file_name": "ReYT_MUSIC_MORPHE-Version9.30.53-PatchVersionv2.1.0-PatchSet213fb7a7b746-2026NOV06.0801PM-output.apk"
+        },
+        "output_file_name": "ReYT_MUSIC_MORPHE-Version9.30.53-PatchVersionv2.1.0-PatchSet213fb7a7b746-2026NOV06.0801PM-output.apk"
+    },
+    "TWITTER_PIKO": {
+        "app_version": "12.19.1-release.0",
+        "patches_versions": [
+            "v3.11.0-dev.4"
+        ],
+        "cli_version": "v1.20.0",
+        "ms_epoch_since_patched": 1793794229337,
+        "date_patched": "2026-11-04 12:10:29.337533+05:30",
+        "app_dump": {
+            "app_name": "TWITTER_PIKO",
+            "app_version": "12.19.1-release.0",
+            "experiment": false,
+            "cli_dl": "https://github.com/MorpheApp/morphe-desktop/releases/latest-release",
+            "patches_dl_list": [
+                "https://github.com/crimera/piko/releases/latest-prerelease"
+            ],
+            "patches_dl": "https://github.com/crimera/piko/releases/latest-prerelease",
+            "exclude_request": [],
+            "include_request": [
+                "bring-back-twitter",
+                "change-version-code"
+            ],
+            "resource": {
+                "cli": {
+                    "file_name": "f435271f2569caef6e8c42a5ddc65a7ffed4924aa337334eddc9ba76604b204e.jar",
+                    "version": "v1.20.0"
+                },
+                "patches": {
+                    "file_name": "2fb6a2acadecb17cc7e5117c173577ab72697f1ac31e97ac280d33b3a3ea6960.mpp",
+                    "version": "v3.11.0-dev.4"
+                }
+            },
+            "patch_bundles": [
+                {
+                    "name": "patches",
+                    "file_name": "2fb6a2acadecb17cc7e5117c173577ab72697f1ac31e97ac280d33b3a3ea6960.mpp",
+                    "version": "v3.11.0-dev.4"
+                }
+            ],
+            "no_of_patches": 75,
+            "keystore_name": "revanced.keystore",
+            "archs_to_build": [
+                "arm64-v8a"
+            ],
+            "options_file": "options.json",
+            "download_file_name": "TWITTER_PIKO.apkm",
+            "download_dl": "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=15554722&key=f014e9a9fb3959349b07cd2cb94532045b5fadc3",
+            "download_source": "https://www.apkmirror.com/apk/x-corp/twitter/",
+            "package_name": "com.twitter.android",
+            "old_key": true,
+            "patches": [],
+            "space_formatted": true,
+            "cli_argsf": "morphe-cli",
+            "effective_cli_argsf": "morphe-cli",
+            "cli_lpargs": "",
+            "cli_pargs": "",
+            "cli_lp_args": {
+                "CMD": "list-patches",
+                "DESCRIPTIONS": "",
+                "FILTER_PACKAGE_NAME": "",
+                "INDEX": "-i",
+                "OPTIONS": "-o",
+                "PACKAGES": "-p",
+                "PATCHES": "--patches",
+                "PATCHES_POST": "",
+                "TEMPORARY_FILES_PATH": "",
+                "UNIVERSAL": "-u",
+                "VERSIONS": "-v"
+            },
+            "cli_p_args": {
+                "APK": "__POSITIONAL__",
+                "CMD": "patch",
+                "CONTINUE_ON_ERROR": "--continue-on-error",
+                "DISABLED": "-d",
+                "ENABLED": "-e",
+                "EXCLUSIVE": "--exclusive",
+                "FORCE": "--force",
+                "KEYSTORE": "--keystore",
+                "KEYSTORE_ENTRY_ALIAS": "--keystore-entry-alias=alias",
+                "KEYSTORE_ENTRY_PASSWORD": "--keystore-entry-password=ReVanced",
+                "KEYSTORE_PASSWORD": "--keystore-password=ReVanced",
+                "OPTIONS": "-O",
+                "OUTPUT": "-o",
+                "PATCHES": "-p",
+                "PATCHES_POST": "",
+                "PURGE": "",
+                "RIP_LIB": "",
+                "STRIPLIBS": "--striplibs",
+                "TEMPORARY_FILES_PATH": "-t"
+            },
+            "_cached_output_file_name": "ReTWITTER_PIKO-Version12.19.1.release.0-PatchVersionv3.11.0.dev.4-PatchSet2179ef6c53d6-2026NOV04.1210PM-output.apk"
+        },
+        "output_file_name": "ReTWITTER_PIKO-Version12.19.1.release.0-PatchVersionv3.11.0.dev.4-PatchSet2179ef6c53d6-2026NOV04.1210PM-output.apk"
+    }
+}
